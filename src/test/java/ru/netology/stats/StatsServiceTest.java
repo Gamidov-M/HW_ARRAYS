@@ -35,7 +35,7 @@ class StatsServiceTest {
     public void testMontMaxSale() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService service = new StatsService();
-        int actual = service.MontMaxSale(sales);
+        int actual = service.montMaxSale(sales);
         int expected = 8;
 
         Assertions.assertEquals(expected, actual);
@@ -46,7 +46,7 @@ class StatsServiceTest {
     public void testMontMinSale() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService service = new StatsService();
-        int actual = service.MontMinSale(sales);
+        int actual = service.montMinSale(sales);
         int expected = 9;
 
         Assertions.assertEquals(expected, actual);
@@ -57,7 +57,7 @@ class StatsServiceTest {
     public void testBellowAverage() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService service = new StatsService();
-        int actual = service.MonthsBellowAverage(sales);
+        int actual = service.monthsBellowAverage(sales);
         int expected = 5;
 
         Assertions.assertEquals(expected, actual);
@@ -68,7 +68,7 @@ class StatsServiceTest {
     public void testAboveAverage() {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         StatsService service = new StatsService();
-        int actual = service.MonthsAboveAverage(sales);
+        int actual = service.monthsAboveAverage(sales);
         int expected = 5;
 
         Assertions.assertEquals(expected, actual);
